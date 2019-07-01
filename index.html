@@ -9,23 +9,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
 </head>
 <body>
-	<nav>
+	<nav class="z-depth-0" style="background-color: white">
     <header class="menu">
     <div class="menu_container">
       <a href="#" class="menu_logo">
         <img src="img/logo.jpeg" class="img_logo" alt="Logomarca do Blog">
       </a>
-      <nav class="menu_nav">
-        <ul>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#" style="border: 3px solid;color: #392818;margin-top: 20%;">Contato</a></li>
+      </ul>
     </div>
   </nav>
-  <main class="intro">
-    <h1>CafeteriaTech <img src="img/xicara_cafe.png" class="img_xicara" alt="Xicara de Cafe"></h1>
+  <main class="row">
+    <div class="col s6 offset-s3">
+      <h1>CafeteriaTech <img src="img/xicara_cafe.png" class="img_xicara" alt="Xicara de Cafe"></h1>
+    </div>
   </main>
   <section class="post">
       <div class="post_item">
@@ -47,11 +51,76 @@
     <div class="assine_container">
      <p>Gostou? Quer mais algumas doses de cafeína? Então vem com a gente!</p>
     <button class="btn_ler"><a href="contato.html">Quero café!</a></button>
+    <button class="btn_ler">
+      <a class="modal-trigger" href="#demo-modal-fixed-footer">Quero café! -Modal</a>
+    </button>
   </div>
   </section>
+
+  <div id="demo-modal-fixed-footer" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <form class="col s12">
+            <div class="row">
+              <div class="input-field col s4">
+                <input placeholder="Nome" id="nome" type="text" class="validate">
+              </div>
+              <div class="input-field col s3">
+                <input placeholder="Sobrenome" id="sobrenome" type="text" class="validate">
+              </div>
+            </div>
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s7">
+                      <textarea placeholder="Em que empresa você trabalha?" id="empresa" class="materialize-textarea" required="campoObrigatório"></textarea>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <form class="col s12">
+                <label>Qual cargo você ocupa atualmente na empresa onde você trabalha?</label>
+             <div class="row">
+               <div class="input-field col s6">
+                  <select>
+                    <option value="" disabled selected>Escolha uma opção</option>
+                    <option value="1">Diretor</option>
+                    <option value="2">Ceo</option>
+                    <option value="3">Gerente / Coordenador</option>
+                    <option value="3">Analista</option>
+                    <option value="3">Estagiario</option>
+                    <option value="3">Estudante</option>
+                  </select>
+               </div>
+              </div>
+              </form>
+                <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s7" requerid>
+                      <textarea id="textarea1" class="materialize-textarea"></textarea>
+                      <label for="textarea1">Qual seu maior desafio hoje?</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+      </div>
+      <div class="modal-footer">
+          <button class="modal-action modal-close btn teal lighten-1" type="submit" name="action">Enviar</button>
+        <a href="#!" class="modal-action modal-close btn deep-orange darken-2">Cancel</a>
+      </div>
+    </form>
+  </div>
   <footer class="footer">
   <div class="footer_container">
       <p>CafeteriaTech - Todos os direitos reservados, Belo Horizonte, MG - 2019 </p>
   </footer>
+
+  <script>
+    $(document).ready(function(){
+        $('.modal').modal();
+        $('select').material_select();
+      })
+  </script>
 </body>
 </html>
