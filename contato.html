@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CafeteriaTech | Dicas de desenvolvimento, tendências de tecnologias e muita cafeína</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Conteudo para programadores, nerds e geeks que querem estar por dentro das tendências do mundo tecnologico e não dispensam um boa xícara de café.">
+  <meta name="keywords" content="Dúvidas sobre tecnologia, quero mais café, inspiração nerd, pilula de sabedoria">
+  <meta name="CafeteriaTech" content="CafeteriaTech">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <main class="intro">
+  <h1>CafeteriaTech <img src="img/xicara_cafe.png" class="img_xicara" alt="Xicara de Cafe"></h1>
+  </main>
+	<section>
+	<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+          <input placeholder="Nome" id="nome" type="text" class="validate">
+        </div>
+        <div class="input-field col s3">
+          <input placeholder="Sobrenome" id="sobrenome" type="text" class="validate">
+        </div>
+      </div>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s7">
+                <textarea placeholder="Em que empresa você trabalha?" id="empresa" class="materialize-textarea" required="campoObrigatório"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <form class="col s12">
+        	<label>Qual cargo você ocupa atualmente na empresa onde você trabalha?</label>
+     	<div class="row">
+       	<div class="input-field col s6">
+  		<p>
+	      <label>
+	        <input name="group1" type="radio" checked />
+	        <span>Diretor</span>
+	      </label>
+	    </p>
+	    <p>
+	      <label>
+	        <input name="group1" type="radio" />
+	        <span>CEO</span>
+	      </label>
+	    </p>
+	    <p>
+	      <label>
+	        <input name="group1" type="radio"/>
+	        <span>Gerente / Coordenador</span>
+	      </label>
+	    </p>
+	    <p>
+	      <label>
+	        <input name="group1" type="radio"/>
+	        <span>Analista</span>
+	      </label>
+	    </p>
+	     <p>
+	      <label>
+	        <input name="group1" type="radio"/>
+	        <span>Estagiario</span>
+	      </label>
+	    </p>
+	    <p>
+	      <label>
+	        <input name="group1" type="radio"/>
+	        <span>Estudante</span>
+	      </label>
+	       </div>
+        </div>
+        </form>
+          <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s7" requerid>
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Qual seu maior desafio hoje?</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Enviar</button>
+    </form>
+	</section>
+</body>
+</html>
