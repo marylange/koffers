@@ -3,7 +3,7 @@
 <head>
   <title>CafeteriaTech | Dicas de desenvolvimento, tendências de tecnologias e muita cafeína</title>
   <meta charset="UTF-8">
-  <meta name="description" content="Conteudo para programadores, nerds e geeks que querem estar por dentro das tendências do mundo tecnologico e não dispensam um boa xícara de café.">
+  <meta name="description" content="Conteudo para programadores, nerds e geeks que querem estar por dentro das tendências do mundo tecnologico e não dispensam uma boa xícara de café.">
   <meta name="keywords" content="Tendências, tecnologia, caféina, cultura geek, tech, development">
   <meta name="CafeteriaTech" content="CafeteriaTech">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,34 +12,34 @@
   <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
 </head>
 <body>
-	<nav class="z-depth-0" style="background-color: white">
     <header class="menu">
+    <nav class="z-depth-0" style="background-color: white">
     <div class="menu_container">
       <a href="#" class="menu_logo">
-        <img src="img/logo.jpeg" class="img_logo" alt="Logomarca do Blog">
+        <img src="img/logo.png" class="img_logo" alt="Logomarca do Blog">
       </a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#" style="border: 3px solid;color: #392818;margin-top: 20%;">Contato</a></li>
+      <ul id="nav-mobile" class="right">
+        <li><a href="#more" style="border: 3px solid;color: #392818;margin-top: 20%; margin-right: 3%;">Mais</a></li>
       </ul>
     </div>
   </nav>
+  </header>
   <main class="row">
     <div class="col s6 offset-s3">
-      <h1>CafeteriaTech <img src="img/xicara_cafe.png" class="img_xicara" alt="Xicara de Cafe"></h1>
+      <h1 class="titulo_intro">CafeteriaTech <img src="img/xicara_cafe.png" class="img_xicara" alt="Xicara de Cafe"></h1>
     </div>
   </main>
-  <section class="post">
-      <div class="post_item">
+  <section class="row post">
+      <div  class="col s5 post_item">
         <img src="">
         <div>
           <h2>Titulo News</h2>
            <h3> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h3>
         </div>
       </div>
-      <div class="post_item">
+      <div class="col s5 post_item">
         <img src="">
           <div>
             <h2>Titulo News</h2>
@@ -47,12 +47,11 @@
         </div>
       </div>
   </section>
-  <section class="assine">
+  <section class="assine col s12">
     <div class="assine_container">
      <p>Gostou? Quer mais algumas doses de cafeína? Então vem com a gente!</p>
-    <button class="btn_ler"><a href="contato.html">Quero café!</a></button>
-    <button class="btn_ler">
-      <a class="modal-trigger" href="#demo-modal-fixed-footer">Quero café! -Modal</a>
+    <button class="btn_ler" id="more">
+      <a class="modal-trigger" href="#demo-modal-fixed-footer">Quero café!</a>
     </button>
   </div>
   </section>
@@ -87,7 +86,7 @@
                     <option value="2">Ceo</option>
                     <option value="3">Gerente / Coordenador</option>
                     <option value="3">Analista</option>
-                    <option value="3">Estagiario</option>
+                    <option value="3">Estagiário</option>
                     <option value="3">Estudante</option>
                   </select>
                </div>
@@ -103,7 +102,6 @@
                   </div>
                 </form>
               </div>
-
       </div>
       <div class="modal-footer">
           <button class="modal-action modal-close btn teal lighten-1" type="submit" name="action">Enviar</button>
