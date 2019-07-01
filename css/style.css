@@ -11,7 +11,7 @@ body{
 }
 .menu_container{
 	max-width: 960px;
-	margin: 0 auto;
+	margin: 30px auto;
 }
 .menu_container::after, .menu_container::before{
 	content: "";
@@ -25,7 +25,7 @@ a.menu_logo{
 }
 .menu_nav{
 	float: right;
-	margin-right: 10px;
+	margin: 10px 0 0 10px;
 }
 .menu_nav li{
 	display: inline-block;
@@ -44,18 +44,16 @@ a.menu_logo{
 	color: #392818;
 }
 .menu_container .img_logo{
-	margin: -60px 0 0 0;
+	margin: -5px 0 0 0;
 	width: 250px;
-	height: 250px;
+	height: 120px;
 }
 /*Media Queries*/
 @media (max-width: 739px){
-	.menu{
-		text-align: center;
-	}
-	a.menu_logo{
-		float: none;
-		margin: 0 auto;
+	.menu_logo > .img_logo{
+		width: 220px;
+		height: 100px;
+		align-items: center;
 	}
 	.menu_nav{
 		float: none;
@@ -68,18 +66,24 @@ h1{
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 2.5em;
-	margin: 20px 0 0 0;
+	margin: 5px 0 0 0;
 }
 .img_xicara{
 	width: 40px;
 	height: 40px;
 }
+/*Media Queries intro*/
+@media (max-width: 739px){
+	.titulo_intro{
+		display: none;
+	}
+}
 /* postagem blog */
 .post{
-	padding: 60px 0;
+	padding: 10px 0;
 }
 .post_container{
-	max-width: 1440px;
+	width: 460px;
 	margin: 0 auto;
 }
 .post_container::after, .post_container::before{
@@ -90,20 +94,19 @@ h1{
 .post_item{
 	clear: right;
 	float: left;
-	display: inline-block;
-	margin: 40px 80px;
+	margin: 40px 50px;
 }
 .post_item h2{
 	font-size: 3.2em;
 	font-weight: bold;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 	text-align: center;
 }
 .post_item h3{
 	font-size: 1.2em;
 	font-weight: bold;
 	font-style: normal;
-	padding-bottom: 30px;
+	padding-bottom: 5px;
 	text-align: justify;
 	line-height: 1.8em;
 }
@@ -115,20 +118,30 @@ h1{
 	width: 460px;
 	float: left;
 	display: inline-block;
-	margin: 0 10px;
+	margin: 50px 10px;
+}
+@media (max-width: 739px){
+	.post_item{
+		float: left;
+	}
 }
 /* call to action */
 .assine{
-	padding: 30px 0;
+	padding: 0px 0;
 }
 .assine p{
+	margin: 30px;
 	font-size: 1.125em;
 	text-align: center;
 	font-weight: bold;
 }
 .assine_container{
-	max-width: 960px;
+	max-width: 100%;
+	height: 150px;
 	margin: 0 auto;
+	color: #fff;
+	background-image: url("../img/cafe.jpg");
+	background-size: cover;
 }
 .assine_container::after, .assine_container::before{
 	content: "";
@@ -136,7 +149,7 @@ h1{
 	clear: both;	
 }
 .btn_ler{
-	width: 180px;
+	width: 200px;
 	border: 3px solid;
 	color: #252525;
 	text-decoration: none;
@@ -145,12 +158,23 @@ h1{
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 15px 0;
-	margin: 20px auto 50px auto;
+	padding: 10px 30px;
+	margin: 20px auto 30px auto;
+	letter-spacing: .1em;
 }
 .btn_ler a {
 	text-decoration: none;
 	color: #392818;
+}
+/*Media Queries - Call*/
+@media (max-width: 739px){
+	.assine{
+		width: 600px;
+	}
+	.btn_ler{
+		align-items: center;
+		margin: 10px 0  0 150px;
+	}
 }
 /*Footer*/
 .footer{
@@ -164,6 +188,7 @@ h1{
 }
 .footer_container p{
 	text-align: center;
+	margin: 20px;
 }
 .footer_container ul li{
 	list-style: none;
@@ -180,4 +205,18 @@ h1{
 	display: block;
 	width: 50px;
 	height: 50px;
+}
+/*Media Queries - Footer*/
+@media (max-width: 739px){
+	.footer_container{
+		width: 340px;
+	}
+	.footer p{
+		float: none;
+		margin: 0px;
+	}
+	.footer img{
+		float: none;
+		margin: 10px 0;
+	}
 }
