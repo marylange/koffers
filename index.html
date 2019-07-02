@@ -87,53 +87,37 @@
 
   <div id="demo-modal-fixed-footer" class="modal modal-fixed-footer">
     <div class="modal-content">
-      <form class="col s12" name="contact" method="POST" data-netlify="true">
-        <div class="row">
-          <div class="input-field col s4">
-            <input placeholder="Nome" id="nome" type="text" class="validate">
-          </div>
-          <div class="input-field col s3">
-            <input placeholder="Sobrenome" id="sobrenome" type="text" class="validate">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12">
-            <div class="row">
-              <div class="input-field col s7">
-                <textarea placeholder="Em que empresa você trabalha?" id="empresa" class="materialize-textarea"
-                  required="campoObrigatório"></textarea>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s12">
-          <label>Qual cargo você ocupa atualmente na empresa onde você trabalha?</label>
-          <div class="row">
-            <div class="input-field col s6">
-              <select>
-                <option value="" disabled selected>Escolha uma opção</option>
-                <option value="diretor">Diretor</option>
-                <option value="ceo">Ceo</option>
-                <option value="gerent/coordenador">Gerente / Coordenador</option>
-                <option value="analista">Analista</option>
-                <option value="estagiario">Estagiário</option>
-                <option value="estudante">Estudante</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12">
-            <div class="row">
-              <div class="input-field col s7" requerid>
-                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                <label for="textarea1">Qual seu maior desafio hoje?</label>
-              </div>
-            </div>
-          </div>
-        </div>
-          <button class="modal-action modal-close btn teal lighten-1" type="submit" name="action">Enviar</button>
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Nome: <input type="text" name="nome" /></label>
+          <label>Sobre Nome: <input type="text" name="nome" /></label>   
+        </p>
+        <p>
+          <label>Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Empresa que trabalha atualmente: <input type="text" name="empresa" /></label>
+        </p>
+        <p>
+          <label>Qual cargo você ocupa atualmente na empresa onde você trabalha?
+            <select>
+              <option value="" disabled selected>Escolha uma opção</option>
+              <option value="diretor">Diretor</option>
+              <option value="ceo">Ceo</option>
+              <option value="gerent/coordenador">Gerente / Coordenador</option>
+              <option value="analista">Analista</option>
+              <option value="estagiario">Estagiário</option>
+              <option value="estudante">Estudante</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label>Qual seu maior desafio hoje? <textarea name="desafio"></textarea></label>
+        </p>
+        <p>
+          <button class="modal-action modal-close btn teal lighten-1" type="submit">Enviar</button>
           <a href="#!" class="modal-action modal-close btn deep-orange darken-2">Cancelar</a>
+        </p>
       </form>
     </div>
   </div>
