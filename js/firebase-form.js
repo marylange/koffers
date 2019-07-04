@@ -53,8 +53,8 @@ function saveMessages(email, nome, ip, tipo, data){
         data: data
     });
 
-    alert('Cadastro Realizado! Muito Obrigado!')
-
+    alert('Muito Obrigado! Você sera redirecionado para o ebook.')
+    window.open('https://drive.google.com/file/d/16uBNtYYVqp6awrMNLmg4txIDUV0XEjK7/view', '_blank');
 }
 
 function pad(n) {
