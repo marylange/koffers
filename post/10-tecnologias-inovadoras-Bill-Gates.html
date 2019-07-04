@@ -75,7 +75,7 @@
     <div class="col s12 m8 l9 center form_contato responsive">
       <h3>BAIXE NOSSO E-BOOK GRATUITAMENTE</h3>
       <h4>Preencha seus dados abaixo!</h4>
-      <form class="col s12" id="getLeads">
+      <form class="col s12" id="getLeads" name="contact" method="POST" data-netlify="true">
           <div class="row">
             <div class="input-field col s6">
               <input  id="nome" type="text" class="validate" required>
@@ -105,12 +105,6 @@
   <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script> 
   <script src="js/firebase-form.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.modal').modal();
-      $('select').material_select();
-    })
-  </script>
   <script type="application/javascript">
     $(function () {
       $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
