@@ -25,7 +25,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143123105-1"></script>
   <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -85,7 +88,7 @@
         <br />
 
 
-        <h3 class="header">
+        <h3 class="header" align="left">
           Novidades
         </h3>
         <hr color="pink" width="70%" size="5%" align="left">
@@ -169,15 +172,15 @@
           <h5 class="white-text">QUER FICAR POR DENTRO DA TRANSFORMAÇÃO DIGITAL?</h5>
           <p class="grey-text text-lighten-4">CADASTRE-SE PARA RECEBER OS NOSSOS CONTEÚDOS! </p>
         </div>
-        <form class="col s12">
+        <form class="col s12" id="getLeads">
           <div class="row">
             <div class="input-field col s6">
               <input  id="nome" type="text" class="validate">
               <label for="nome">Nome</label>
             </div>
             <div class="input-field col s6">
-              <input id="sobre_nome" type="text" class="validate">
-              <label for="sobre_nome">Sobre Nome</label>
+              <input id="sobreNome" type="text" class="validate">
+              <label for="sobreNome">Sobre Nome</label>
             </div>
           </div>
           <div class="row">
@@ -185,6 +188,7 @@
               <input id="email" type="email" class="validate">
               <label for="email">Email</label>
             </div>
+            <input type="hidden" id="ipUser" value="">
           </div>
           <div class="row">
               <div class="input-field col s12" align="right">
@@ -205,6 +209,10 @@
     </div>
   </footer>
 
+
+  <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script> 
+  <script src="js/firebase-form.js"></script>
   <script>
     $(document).ready(function () {
       $('.modal').modal();
@@ -215,7 +223,8 @@
     $(function () {
       $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
         function (json) {
-          console.log("Meu IP público é: ", json.ip);
+          var ipUserFinal = document.getElementById("ipUser");
+          ipUserFinal.value = json.ip;
         }
       );
     });
