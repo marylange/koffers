@@ -35,6 +35,22 @@
   <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script> 
   <script src="js/firebase-form.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.modal').modal();
+      $('select').material_select();
+    })
+  </script>
+  <script type="application/javascript">
+    $(function () {
+      $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+        function (json) {
+          var ipUserFinal = document.getElementById("ipUser");
+          ipUserFinal.value = json.ip;
+        }
+      );
+    });
+  </script>
 </head>
 
 <body>  
