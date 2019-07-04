@@ -69,12 +69,24 @@
         <div class="col s12 m8 l9 center form_contato responsive">
             <h3>BAIXE NOSSO E-BOOK GRATUITAMENTE</h3>
             <h4>Preencha seus dados abaixo!</h4>
-          <form name="contact" method="POST" data-netlify="true">
-            <p>
-              <label>Email: <input type="text" name="email" placeholder="Informe seu email:" class="form_input" /></label>
-            </p>
-            <p>
-              <button class="btn-large deep-orange right" type="submit">BAIXAR E-BOOK GRATUITAMENTE</button>
-            </p>
-          </form>
+            <form class="col s12" id="getLeads" name="contact" method="POST" data-netlify="true">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input  id="nome" type="text" class="validate" required>
+                    <label for="nome">Nome</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="sobreNome" type="text" class="validate" required>
+                    <label for="sobreNome">Sobrenome</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="email" type="email" class="validate" required>
+                    <label for="email">Email</label>
+                  </div>
+                  <input type="hidden" id="ipUser" value="">
+                </div>
+                <button class="btn-large deep-orange right" type="submit">BAIXAR E-BOOK GRATUITAMENTE</button>
+              </form>
         </div>
