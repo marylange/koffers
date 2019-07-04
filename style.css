@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* Body */
+body{
+	font-family: 'Roboto', sans-serif;
+}
+/* Header */
+header{
+	height: 450px;
+}
+ul{
+	margin: 0px 10px;
+	text-align: center;
+}
+/* Cabeçalho */
+.intro_header{
+	background-color: #392818;
+	height: 100px;
+	align-items: center;
+}
+/*Imagens*/
+.intro{
+	margin-top: 90px;
+}
+.img_intro{
+	max-width: 100%;
+	height: 400px;
+	margin-bottom: 250px;
+	padding: 0 auto;
+}
+.logo_header{
+	max-width:100%;
+	height:80px;
+	align-items: center;
+}
+.img_post{
+	margin: 0 auto;
+	width: 100%;
+	height: 400px;
+}
+.img_perfil{
+	width: 120px;
+	height: 80px;
+}
+.img_midias{
+	width: 60px;
+	height: 60px;
+	margin: 0 5px;
+}
+/*Intro*/
+.conteudo_item{
+	margin: 100px;
+}
+/* Tags de texto */
+h1{
+	text-transform: uppercase;
+	font-size: .2em;
+	display: block;
+	color: #000;
+	font-weight: bold;
+	line-height: 5px;
+	font-family: 'Asap Condensed', sans-serif;
+}
+h2{
+	text-transform: uppercase;
+	font-size: 1.825em;
+	display: block;
+	color: #000;
+	font-weight: bold;
+	line-height: 5px;
+	font-family: 'Asap Condensed', sans-serif;
+}
+h3{
+	text-transform: uppercase;
+	font-size: 0.125em;
+	display: block;
+	color: #fff;
+	font-weight: bolder;
+	line-height: 5px;
+	text-align: center;
+	font-family: 'Asap Condensed', sans-serif;
+}
+h4{
+	text-transform: uppercase;
+	font-size: 0.825em;
+	display: block;
+	color: #fff;
+	font-weight: bold;
+	line-height: 5px;
+	text-align: center;
+	font-family: 'Asap Condensed', sans-serif;
+}
+p{
+	text-align: center;
+	text-align: justify;
+	font-size: 1.125em;
+	margin-bottom: 20px;
+}
+.text_midia{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+nav > a{
+	color: #000;
+}
+.destaque_palavras{
+	font-weight: bold;
+}
+/* Media Querys */
+@media screen and (max-width: 739px) {
+  h2 {
+    font-size: .1em;
+    float: left;
+    max-width: 300px;
+  }
+  .img_post{
+  	width: 400px;
+  	height: 250px;
+  }
+}
+/* Definições de postagem */
+.main_conteudo{
+	margin: -40px -10 0 -20px;
+	padding: 0 auto;
+	position: relative;
+}
+.post{
+	margin: 20px auto;
+	max-width: 460px;
+	position: relative;
+}
+.post_item{
+	float: left;
+	align-items: left;
+}
+.dados_autor{
+	margin: 5px auto;
+}
+/*Separador*/
+.separador{
+	content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #FF8C00;
+    margin: 0px 0px;
+}
+/* Formulario de contato */
+.form_contato{
+	background: #bababa;
+	width: 250px;
+	height: 350px;
+	border-radius: 3px;
+	margin: 50px auto;
+}
+.form_input {
+	width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+/* Footer*/
+footer{
+	background: #392818;
+	padding: 5px 0;
+	text-align: center;
+	color: #fff;
+	font-weight: bolder;
+}
+.footer_container{
+	max-width: 960px;
+	margin: 0 auto;
+}
