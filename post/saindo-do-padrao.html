@@ -137,48 +137,55 @@
           E aí? Viu como essas inovações estão mudando a forma de mercado! Vale a pena conferir nossos outros conteúdos aqui no blog!
           </p>
     </div>
-  <!--Formulário para captar email -->
-  <div class="col s12 m8 l9 center form_contato responsive">
-    <h3>BAIXE NOSSO E-BOOK GRATUITAMENTE</h3>
-    <h4>Preencha seus dados abaixo!</h4>
-    <form class="col s12" id="getLeads" name="contact" method="POST" data-netlify="true">
-        <div class="row">
-          <div class="input-field col s6">
-            <input  id="nome" type="text" class="validate" required>
-            <label for="nome">Nome</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="sobreNome" type="text" class="validate" required>
-            <label for="sobreNome">Sobrenome</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="email" type="email" class="validate" required>
-            <label for="email">Email</label>
-          </div>
-          <input type="hidden" id="ipUser" value="">
-        </div>
-        <div class="row">
-            <div class="input-field col s12" align="right">
-                <button class="btn-large deep-orange right" type="submit" name="action">BAIXAR E-BOOK GRATUITAMENTE</button>
-              </button></a>
+    <div class="col s12 m4 l3">
+        <p class="text_midia">Siga nossas redes sociais...</p>
+        <p>E fique por dentro dos assuntos mais quentinhos da tecnologia.</p>
+        <a href="https://www.facebook.com/cafeteria-tech"><img src="../img/face.png" class="s1 l1 img_midias"></a>
+        <a href="https://www.instagram.com/cafeteriatech"><img src="../img/insta.png" class="s1 l1 img_midias"></a>
+        <a href="https://www.linkedin.com/company/cafeteria-tech"><img src="../img/in.png" class="s1 l1 img_midias"></a>
+      </div>
+      <!--Formulário para captar email -->
+      <div class="col s12 m8 l9 center form_contato responsive">
+        <h3>BAIXE NOSSO E-BOOK GRATUITAMENTE</h3>
+        <h4>Preencha seus dados abaixo!</h4>
+        <form class="col s12" id="getLeads">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="nome" type="text" class="validate" required>
+              <label for="nome">Nome</label>
             </div>
-        </div> 
-      </form>
-  </div>
-</main>
-<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script> 
-<script src="../js/firebase-form.js"></script>
-<script type="application/javascript">
-  $(function () {
-    $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
-      function (json) {
-        var ipUserFinal = document.getElementById("ipUser");
-        ipUserFinal.value = json.ip;
-      }
-    );
-  });
-</script>
-</body>
+            <div class="input-field col s6">
+              <input id="sobreNome" type="text" class="validate" required>
+              <label for="sobreNome">Sobrenome</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate" required>
+              <label for="email">Email</label>
+            </div>
+            <input type="hidden" id="ipUser" value="">
+          </div>
+          <div class="row">
+            <div class="input-field col s12" align="right">
+              <button class="btn-large deep-orange right" type="submit" name="action">BAIXAR E-BOOK GRATUITAMENTE 
+                 <i class="material-icons right">send</i></button></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="../js/cto.js"></script>
+    <script type="application/javascript">
+      $(function () {
+        $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+          function (json) {
+            var ipUserFinal = document.getElementById("ipUser");
+            ipUserFinal.value = json.ip;
+          }
+        );
+      });
+    </script>
+  </body>
