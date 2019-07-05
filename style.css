@@ -165,7 +165,7 @@ footer{
 }
 
 /* Media Querys */
-/*@media screen and (max-width: 739px) {
+@media screen and (max-width: 739px) {
   h2 {
     font-size: .1em;
     float: left;
@@ -175,9 +175,8 @@ footer{
   	width: 400px;
   	height: 250px;
   }
-}*/
-@media screen and (max-width: 600px) {
-  .column {
+	
+body{
     width: 100%;
   }
 }
