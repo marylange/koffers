@@ -109,6 +109,18 @@ nav > a{
 	font-weight: bold;
 }
 /* Media Querys */
+@media screen and (max-width: 739px) {
+  h2 {
+    font-size: .1em;
+    float: left;
+    max-width: 300px;
+  }
+  .img_post{
+  	width: 400px;
+  	height: 250px;
+  }	
+}
+
 /* Definições de postagem */
 .main_conteudo{
 	margin: -40px -10 0 -20px;
@@ -161,20 +173,4 @@ footer{
 .footer_container{
 	max-width: 960px;
 	margin: 0 auto;
-}
-
-/* Media Querys */
-@media screen and (max-width: 600px) {
-  h2 {
-    font-size: .1em;
-    float: left;
-    max-width: 300px;
-  }
-  .img_post{
-  	width: 100%;
-  	height: 250px;
-  }	
-body{
-    width: 100% !important;
-  }
 }
