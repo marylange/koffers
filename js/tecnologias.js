@@ -54,7 +54,7 @@ function saveMessages(email, nome, ip, tipo, data){
     });
 
     alert('Muito Obrigado! Você sera redirecionado para o ebook.')
-    window.open('https://drive.google.com/file/d/1i0Vkghyd8i3VXuNgCYdnyqY7aCIZK4Va/view', '_blank');
+    window.open('https://drive.google.com/file/d/1dE6QKLG9zFEQ36Gd9nUoHk3Nw4Fp7eNr/view', '_blank');
 }
 
 function pad(n) {
